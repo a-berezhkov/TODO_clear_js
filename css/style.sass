@@ -1,0 +1,112 @@
+@import "colors"
+body
+  background-color: $base-color
+  font-family: 'Inter', sans-serif
+
+button
+  border: none
+  color: white
+  height: 39px
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-around
+  padding: 10px 16px
+  border-radius: 4px
+  cursor: pointer
+
+form
+  padding: 24px
+
+.wrapper
+  margin: 80px auto 0 auto
+  width: 594px
+
+  .container
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.16)
+    border-radius: 16px 16px 0 0
+    background-color: white
+
+  h1
+    text-align: center
+
+  input[type='checkbox'], p, span
+    display: inline-block
+    accent-color: #7749F8
+    transform: scale(1.23076)
+
+  input[type='text']
+    min-width: 356px
+    border: 1px solid $border-light
+    border-radius: 4px
+    font-size: 16px
+    color: $input-grey
+    padding: 8px
+
+  button[type='submit']
+    min-width: 166px
+    background-color: $dark-grey
+
+  .container__items
+    margin-top: 7px
+    padding: 24px
+
+  form, .footer
+    display: flex
+    justify-content: space-between
+
+.item
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-top: 26px
+
+  .item__text
+    margin-left: 16px
+    min-width: 472px
+    cursor: pointer
+
+  .item__text_line-through
+    text-decoration: line-through
+
+  .item__close
+    margin-left: 16px
+    cursor: pointer
+
+.item:last-child
+  margin-bottom: 32px
+
+.item:first-child
+  margin-top: 0
+
+.footer
+  padding: 18px 24px 18px 24px
+  background-color: $footer-light
+  border-radius: 0 0 16px 16px
+  box-shadow: 0 8px 35px -10px rgb(0 0 0 / 16%)
+
+.footer__button-delete-active
+  background-color: $light-grey
+  width: 214px
+
+.footer__button-delete-all
+  background-color: $dark-pink
+  width: 131px
+.loader
+  border: 16px solid #f3f3f3
+  border-top: 16px solid $dark-pink
+  border-radius: 50%
+  width: 50px
+  height: 50px
+  animation: spin 2s linear infinite
+  margin: 0 auto
+
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+
+

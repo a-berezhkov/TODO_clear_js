@@ -1,0 +1,19 @@
+doctype html
+head
+    meta(charset="UTF-8")
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap')
+    link(rel='stylesheet', href='css/style.css')
+body
+    div(class='wrapper')
+        h1(class='wrapper__text__center') ToDo List
+        div(class='container')
+            form
+                input(type='text', name='task', id="text")
+                button(type='submit') Добавить
+            hr
+            div(class='container__items')
+                div(class='loader')
+        div(class='footer')
+            button(type='button', class='footer__button-delete-active') Удалить завершенные
+            button(type='button', class='footer__button-delete-all') Удалить все
+script(src="js/app.js", type="module")
